@@ -36,6 +36,7 @@ function NavBar() {
           return <NavLink to={item.path}>{item.title}</NavLink>;
         })}
       </div>
+      <></>
     </>
   );
 }

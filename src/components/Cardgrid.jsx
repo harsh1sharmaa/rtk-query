@@ -7,7 +7,7 @@
 //   Button,
 // } from "@material-tailwind/react";
 
-function Cardgrid({ item }) {
+function Cardgrid({ item, addToCart }) {
   // console.log("props");
   // console.log(item);
 
@@ -18,7 +18,7 @@ function Cardgrid({ item }) {
   return (
     <div
       className="max-w-sm rounded overflow-hidden shadow-lg "
-      onClick={() => goToDetails(item.id)}
+      // onClick={() => goToDetails(item.id)}
       key={item.id}
     >
       <img
@@ -42,6 +42,7 @@ function Cardgrid({ item }) {
         <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sx font-semibold text-gray-700 mr-2 mb-2">
           category : {item?.category}
         </span>
+        <button onClick={() => addToCart(item)}>add To Cart</button>
       </div>
     </div>
   );

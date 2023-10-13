@@ -37,17 +37,17 @@ function App() {
     <>
       <Router>
         <Routes>
-          {/* <Route path="/auth/login" element={<Login />} />
-            <Route path="/auth/register" element={<Register />} /> */}
-          <Route element={<NavBar />}>
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/home" element={<Home />} />
-            {/* <Route path="/products" element={<Produc />} /> */}
-            {/* <Route path="/profile" element={<Profile />} /> */}
-            <Route path="/cart" element={<Cart />} />
-            <Route path="/home/:id" element={<Details />} />
-          </Route>
-          <Route
+          <Route path="/auth/login" element={<Login />} />
+          <Route path="/auth/register" element={<Register />} />
+          {/* <Route element={<NavBar />}> */}
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/home" element={<Home />} />
+          {/* <Route path="/products" element={<Produc />} /> */}
+          {/* <Route path="/profile" element={<Profile />} /> */}
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/home/:id" element={<Details />} />
+          {/* </Route> */}
+          {/*  <Route
             path="/auth/*"
             element={
               <>
@@ -55,7 +55,7 @@ function App() {
                 <Route path="register" element={<Register />} />
               </>
             }
-          />
+          /> */}
         </Routes>
       </Router>
       {/* {isSuccess && (
